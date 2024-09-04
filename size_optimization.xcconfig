@@ -1,0 +1,6 @@
+SWIFT_OPTIMIZATION_LEVEL = -Osize
+DEPLOYMENT_POSTPROCESSING = YES
+STRIP_INSTALLED_PRODUCT = YES
+STRIPFLAGS = -rSTx
+OTHER_SWIFT_FLAGS = -Xfrontend -internalize-at-link
+OTHER_LDFLAGS = -Xlinker -exported_symbols_list -Xlinker /dev/null
